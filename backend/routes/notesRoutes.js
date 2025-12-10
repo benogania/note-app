@@ -22,7 +22,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-// GET /notes/search?q=your+query
+
 router.get('/search', async (req, res) => {
   const { q } = req.query;
   if (!q) return res.json([]);
